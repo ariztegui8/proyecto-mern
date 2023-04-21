@@ -1,6 +1,8 @@
 import generarId from '../helpers/generarId.js';
 import generarJWT from '../helpers/generarJWT.js';
 import Usuario from '../models/Usuario.js'
+
+
 const registrar = async (req, res) =>{
     //Evitar registros duplicados
     const {email} = req.body;
